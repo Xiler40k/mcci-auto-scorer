@@ -1,37 +1,37 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "mcciautoscorer",
 	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "MCCI auto scorer",
+	"description": "This mod aims to automatically score for specific tournament servers.",
 	"authors": [
-		"Me!"
+		"Xiler!"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/Xiler40k/mcci-auto-scorer",
+		"sources": "https://github.com/Xiler40k/mcci-auto-scorer"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/modid/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"com.xiler.mcciautoscorer.McciAutoScorer"
 		],
 		"client": [
-			"com.example.ExampleModClient"
+			"com.xiler.mcciautoscorer.ClientMain"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
+		"mcciautoscorer.mixins.json",
 		{
-			"config": "modid.client.mixins.json",
+			"config": "mcciautoscorer.client.mixins.json",
 			"environment": "client"
 		}
 	],
 	"depends": {
 		"fabricloader": ">=0.16.10",
-		"minecraft": "~1.21.5",
+		"minecraft": "~1.21.4",
 		"java": ">=21",
 		"fabric-api": "*"
 	},

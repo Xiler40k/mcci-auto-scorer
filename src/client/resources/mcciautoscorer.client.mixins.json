@@ -1,9 +1,9 @@
 {
 	"required": true,
-	"package": "com.example.mixin.client",
+	"package": "com.xiler.mcciautoscorer.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"client": [
-		"ExampleClientMixin"
+		"OnChatMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
