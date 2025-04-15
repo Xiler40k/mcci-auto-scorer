@@ -1,0 +1,20 @@
+{
+  "mappings": {
+    "com/example/mixin/client/ExampleClientMixin": {
+      "run": "Lnet/minecraft/class_310;method_1514()V"
+    },
+    "com/xiler/mcciautoscorer/mixin/OnChatMixin": {
+      "addMessage": "Lnet/minecraft/class_338;method_1812(Lnet/minecraft/class_2561;)V"
+    }
+  },
+  "data": {
+    "named:intermediary": {
+      "com/example/mixin/client/ExampleClientMixin": {
+        "run": "Lnet/minecraft/class_310;method_1514()V"
+      },
+      "com/xiler/mcciautoscorer/mixin/OnChatMixin": {
+        "addMessage": "Lnet/minecraft/class_338;method_1812(Lnet/minecraft/class_2561;)V"
+      }
+    }
+  }
+}
