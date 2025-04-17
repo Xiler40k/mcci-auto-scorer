@@ -24,14 +24,16 @@ public class ClientMain implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         System.out.println("Client mod is running!");
+        String username = MinecraftClient.getInstance().getSession().getUsername();
+        System.out.println("Logged in as " + username + "!!");
 
-        ClientTickEvents.END_CLIENT_TICK.register(client -> {
-            if(client.player == null || client.world == null) return;
-
-            tickCounter++;
-            if(tickCounter % 20 != 0) return; else tickCounter = 0;
-            checkChatMessages(client);
-        });
+//        ClientTickEvents.END_CLIENT_TICK.register(client -> {
+//            if(client.player == null || client.world == null) return;
+//
+//            tickCounter++;
+//            if(tickCounter % 20 != 0) return; else tickCounter = 0;
+//            checkChatMessages(client);
+//        });
 
 
     }

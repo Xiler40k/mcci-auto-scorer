@@ -3,7 +3,8 @@
 	"package": "com.xiler.mcciautoscorer.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"client": [
-		"OnChatMixin"
+		"OnChatMixin",
+		"PacketCatcherMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
