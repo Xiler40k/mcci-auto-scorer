@@ -1,5 +1,8 @@
 package com.xiler.mcciautoscorer;
+import com.xiler.mcciautoscorer.*;
 
+import com.xiler.mcciautoscorer.mixin.OnChatMixin;
+import com.xiler.mcciautoscorer.util.DelayedTaskManager;
 import net.fabricmc.api.ClientModInitializer;
 
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
@@ -21,11 +24,18 @@ public class ClientMain implements ClientModInitializer {
     private final Set<String> seenMessages = new HashSet<>();
     private int tickCounter = 0;
 
+
     @Override
     public void onInitializeClient() {
         System.out.println("Client mod is running!");
         String username = MinecraftClient.getInstance().getSession().getUsername();
         System.out.println("Logged in as " + username + "!!");
+
+        DelayedTaskManager.init();
+
+
+
+
 
 //        ClientTickEvents.END_CLIENT_TICK.register(client -> {
 //            if(client.player == null || client.world == null) return;
