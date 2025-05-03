@@ -7,6 +7,7 @@ public class GameHandler {
     public boolean gameActive;
     public int currentRound;
     public String username;
+    public boolean allowScore = false;
 
     public void setCurrentGame(String currentGame) {
         this.currentGame = currentGame;
@@ -40,6 +41,14 @@ public class GameHandler {
 
     public void incrementCurrentRound() {
         currentRound++;
+    }
+
+    public boolean isScoreAllowed() {
+        return allowScore;
+    }
+
+    public void setAllowScore(boolean allowScore) {
+        this.allowScore = allowScore;
     }
 
 
