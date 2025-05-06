@@ -1,9 +1,13 @@
-# Fabric Example Mod
+# MCCI AUTO SCORER
 
-## Setup
+## How it works
 
-For setup instructions please see the [fabric documentation page](https://docs.fabricmc.net/develop/getting-started/setting-up-a-development-environment) that relates to the IDE that you are using.
+This mod takes in information from both the minecraft chat and scoreboard and compiles this into scores that are often used in spreadsheets for MCCI tournaments. This can be sent to the backend server, where the information can be processed and inputted into the spreadsheet to reduce the amount of automatic scoring requried.
 
-## License
+Currently in development for:
+ICC
+MCCIT
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+## To do
+
+[ ] Finish the rest of games (custom and regular) scoring wise 
