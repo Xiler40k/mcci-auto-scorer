@@ -1,4 +1,9 @@
 package com.xiler.mcciautoscorer;
+<<<<<<< Updated upstream
+=======
+import com.xiler.mcciautoscorer.*;
+import com.xiler.mcciautoscorer.util.DisconnectHandler;
+>>>>>>> Stashed changes
 
 import net.fabricmc.api.ClientModInitializer;
 
@@ -25,8 +30,13 @@ public class ClientMain implements ClientModInitializer {
     public void onInitializeClient() {
         System.out.println("Client mod is running!");
 
+<<<<<<< Updated upstream
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             if(client.player == null || client.world == null) return;
+=======
+        DelayedTaskManager.init();
+        DisconnectHandler.register();
+>>>>>>> Stashed changes
 
             tickCounter++;
             if(tickCounter % 20 != 0) return; else tickCounter = 0;
